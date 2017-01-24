@@ -55,7 +55,7 @@
 		<div style="text-align: center;">
             <h2>工作流引擎Activiti</h2>
             <h3>
-                <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">kft-activiti-demo（v${prop['system.version']}）</a>
+                <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">activitiServer（v${prop['system.version']}）</a>
                 <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;"></a></h3>
 		</div>
 		<hr />

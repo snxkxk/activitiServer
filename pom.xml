@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>me.kafeitu.demo</groupId>
-    <artifactId>kft-activiti-demo</artifactId>
-    <version>1.15.0-SNAPSHOT</version>
+    <modelVersion>5.22.0</modelVersion>
+    <groupId>org.phylloc.activiti</groupId>
+    <artifactId>activitiServer</artifactId>
+    <version>5.22-SNAPSHOT</version>
     <packaging>war</packaging>
-    <name>Activiti demo</name>
-    <description>activiti demo for version 5.17+</description>
+    <name>ActivitiServer</name>
+    <description>activiti demo for version 5.22</description>
 
     <developers>
         <developer>
-            <id>henryyan</id>
-            <name>Henry Yan</name>
-            <email>yanhonglei@gmail.com</email>
-            <url>http://www.kafeitu.me</url>
+            <id>snxkxk</id>
+            <name>YQQ</name>
+            <email>snxkxk@foxmail.com</email>
+            <url>https://www.baidu.com</url>
             <timezone>8</timezone>
         </developer>
     </developers>
