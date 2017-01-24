@@ -46,15 +46,7 @@ $(function() {
 						return $('#multiInstance').html();
 					}
 				}
-			}, {
-                title: '关于作者',
-                content: {
-                    type: 'text',
-                    text: function() {
-                        return $('.aboutme').html();
-                    }
-                }
-            }]
+			}]
 		}, {
 			width: 350,
 			portlets: [{
@@ -68,28 +60,12 @@ $(function() {
 			}   ]
 		}, {
 			width: 450,
-			portlets: [{
-				title: '项目说明',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.project-info').html();
-					}
-				}
-			}, {
-				title: '架构说明',
+			portlets: [ {
+				title: '组件版本信息',
 				content: {
 					type: 'text',
 					text: function() {
 						return $('.arch').html();
-					}
-				}
-			}, {
-				title: '资源链接',
-				content: {
-					type: 'text',
-					text: function() {
-						return $('.links').html();
 					}
 				}
 			}, {

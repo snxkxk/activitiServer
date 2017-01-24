@@ -15,7 +15,7 @@ PropertyFileUtil.init();
 		}
 	</script>
 	<%@ include file="/common/meta.jsp" %>
-    <title>Activiti-演示系统-咖啡兔(闫洪磊)</title>
+    <title>activitiServer主页</title>
     <%@ include file="/common/include-base-styles.jsp" %>
 	<%@ include file="/common/include-jquery-ui-theme.jsp" %>
     <link rel="stylesheet" type="text/css" href="${ctx }/css/menu.css" />
@@ -46,7 +46,7 @@ PropertyFileUtil.init();
        				<img src="${ctx }/images/logo.png" height="48" align="top"  style="margin-top:5px" />
        			</td>
        			<td>
-       				<span style="font-size: 17px;color:#FFFF33">Activiti<br/>演示系统</span><br/>
+       				<span style="font-size: 17px;color:#FFFF33">Activiti<br/>服务器</span><br/>
        			</td>
        			<td>
        				<div style="float:right; color: #fff;font-size: 12px;margin-top: 2px">
@@ -55,7 +55,6 @@ PropertyFileUtil.init();
 		        			<span title="角色：${groupNames }">${user.firstName } ${user.lastName }/${user.id }</span>
 		        		</div>
 		        		<div style="text-align: right;">
-		        			<a id="chang-theme" href="#">切换风格</a>
 		       				<a href="#" id="loginOut">安全退出</a>
 		        		</div>
 		        	</div>
@@ -78,8 +77,7 @@ PropertyFileUtil.init();
 <!-- #BottomPane -->
 <div id="bottomPane" class="ui-layout-south ui-widget ui-widget-content">
 	<div class="footer ui-state-default">
-		<a href="http://www.kafeitu.me" target="_blank">咖啡兔(闫洪磊)</a>
-		<span class="copyright">©2011-2016</span>
+		<span class="copyright">©2017</span>
 		<span class="version">Version：${prop['system.version']}</span>
 	</div>
 </div>

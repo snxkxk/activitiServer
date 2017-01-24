@@ -34,7 +34,7 @@
 <body style="margin-top: 1em;">
 	<div class="center">
         <div style="text-align: center;">
-            <h3>欢迎访问Activiti Demo，专为优秀的BPMN2.0规范的轻量级工作流引擎Activiti服务</h3>
+            <h3>欢迎访问activitiServer，专为优秀的BPMN2.0规范的轻量级工作流引擎Activiti服务</h3>
         </div>
         <div id='portlet-container'></div>
     </div>
@@ -71,7 +71,7 @@
             <li>Activiti版本：${prop['activiti.version']}</li>
             <li>Spring版本：${prop['spring.version']}</li>
             <li>Hibernate：${prop['hibernate.version']}</li>
-            <li>使用<a href="http://maven.apache.org" target="_blank">Maven</a>管理依赖</li>
+            <li>使用Maven管理依赖</li>
         </ul>
     </div>
 

@@ -55,31 +55,29 @@
 		<div style="text-align: center;">
             <h2>工作流引擎Activiti</h2>
             <h3>
-                <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">activitiServer（v${prop['system.version']}）</a>
-                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;"></a></h3>
+                <a href="https://github.com/snxkxk/activitiServer" target="_blank" style="text-decoration: none;">activitiServer（v${prop['system.version']}）</a>
 		</div>
 		<hr />
 		<form action="${ctx }/user/logon" method="get">
 			<table>
 				<tr>
 					<td width="200" style="text-align: right;">用户名：</td>
-					<td><input id="username" name="username" class="login-input" placeholder="用户名（见下左表）" /></td>
+					<td><input id="username" name="username" class="login-input" placeholder="用户名（见下表）" /></td>
 				</tr>
 				<tr>
 					<td style="text-align: right;">密码：</td>
 					<td><input id="password" name="password" type="password" class="login-input" placeholder="默认为：000000" /></td>
 				</tr>
 				<tr>
-					<td>&nbsp;</td>
-					<td>
-						<button type="submit">登录</button>
+					<td colspan="2" style="text-align:center; " >
+						<button  type="submit">登录</button>
 					</td>
 				</tr>
 			</table>
 		</form>
 		<hr />
 		<div>
-            <div style="float:left; width: 48%;margin-right: 2%;">
+            <div style="float:left; width: 45%;margin-right: 2%;">
                 <table border="1">
                     <caption>用户列表(密码：000000)</caption>
                     <tr>
@@ -104,23 +102,19 @@
                     </tr>
                 </table>
             </div>
-          
 		</div>
-        <hr />
-        <div>
-            <div style="float:left; width: 50%;">
+		 <div style="float:right; width: 45%;">
                 <h5>组件版本信息</h5>
                 <ul>
                     <li>Activiti版本：${prop['activiti.version']}</li>
                     <li>Spring版本：${prop['spring.version']}</li>
                     <li>Database：${prop['db.type']}</li>
-                    <li>使用<a href="http://maven.apache.org" target="_blank">Maven</a>管理依赖</li>
+                    <li>使用Maven管理依赖</li>
                 </ul>
             </div>
-       
+        <div>
         </div>
-        <hr />
-    
+     <hr />
     </div>
 </body>
 </html>
