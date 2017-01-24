@@ -523,7 +523,7 @@
             </plugin>
         </plugins>
 
-        <finalName>kft-activiti-demo</finalName>
+        <finalName>activitiServer</finalName>
     </build>
 
     <profiles>
