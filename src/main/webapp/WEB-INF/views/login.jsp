@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<%@ include file="/common/global.jsp"%>
-	<title>KAD登录页 - 咖啡兔(闫洪磊)</title>
+	<title>activitiServer</title>
 	<script>
 		var logon = ${not empty user};
 		if (logon) {
@@ -53,10 +53,10 @@
         </c:if>
 
 		<div style="text-align: center;">
-            <h2>工作流引擎Activiti演示项目</h2>
+            <h2>工作流引擎Activiti</h2>
             <h3>
                 <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">kft-activiti-demo（v${prop['system.version']}）</a>
-                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;">（By 咖啡兔）</a></h3>
+                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;"></a></h3>
 		</div>
 		<hr />
 		<form action="${ctx }/user/logon" method="get">
@@ -72,7 +72,7 @@
 				<tr>
 					<td>&nbsp;</td>
 					<td>
-						<button type="submit">登录Demo</button>
+						<button type="submit">登录</button>
 					</td>
 				</tr>
 			</table>
@@ -104,22 +104,7 @@
                     </tr>
                 </table>
             </div>
-            <div style="float:right; width: 50%;">
-                <dl>
-                    <dt>《Activiti实战》：</dt>
-                    <dd><a target="_blank" href="http://www.kafeitu.me/activiti-in-action.html">http://www.kafeitu.me/activiti-in-action.html</a></dd>
-
-                    <dt>Wiki：</dt>
-                    <dd><a target="_blank" href="https://github.com/henryyan/kft-activiti-demo/wiki">https://github.com/henryyan/kft-activiti-demo/wiki</a></dd>
-
-                    <dt>Demo源码：</dt>
-                    <dd><a target="_blank" href="https://github.com/henryyan/kft-activiti-demo">https://github.com/henryyan/kft-activiti-demo</a></dd>
-
-                    <dt>Activiti资料：</dt>
-                    <dd><a target="_blank" href="http://www.kafeitu.me/categories.html#activiti-ref">http://www.kafeitu.me/categories.html#activiti-ref</a></dd>
-
-                </dl>
-            </div>
+          
 		</div>
         <hr />
         <div>
@@ -132,20 +117,10 @@
                     <li>使用<a href="http://maven.apache.org" target="_blank">Maven</a>管理依赖</li>
                 </ul>
             </div>
-            <div style="float:right; width: 50%;">
-                <h5>QQ交流群</h5>
-                <ul>
-                    <li>Activiti中文群1(<span style="color:green;font-weight: bold">欢迎</span>)：236540304</li>
-                    <li>Activiti中文群2(<span style="color:red">已满</span>)：23539326</li>
-                    <li>Activiti中文群3(<span style="color:red">已满</span>)：139983080</li>
-                    <li>Activiti中文群4(<span style="color:red">已满</span>)：327913744</li>
-                </ul>
-            </div>
+       
         </div>
         <hr />
-        <div>
-            <a href="http://www.kafeitu.me/activiti-in-action.html" target="_blank"><img src="${ctx}/images/activiti-in-action.jpg" alt=""></a>
-        </div>
+    
     </div>
 </body>
 </html>
