@@ -100,7 +100,6 @@ public class FormKeyController {
 
         // 根据流程定义ID读取外置表单
         Object startForm = formService.getRenderedStartForm(processDefinitionId);
-
         return startForm;
     }
 
