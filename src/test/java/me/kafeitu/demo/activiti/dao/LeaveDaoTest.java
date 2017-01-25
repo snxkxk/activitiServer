@@ -44,6 +44,7 @@ public class LeaveDaoTest extends SpringTransactionalTestCase {
 		leave.setUserId("kafeitu");
 		leave.setReason("no reason");
 		entityDao.save(leave);
+		entityDao.save(leave);
 		System.out.println("__________________");
 		System.out.println(leave.getId());
 		System.out.println("__________________");
