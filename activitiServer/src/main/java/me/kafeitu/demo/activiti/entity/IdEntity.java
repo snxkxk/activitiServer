@@ -30,5 +30,6 @@ public abstract class IdEntity {
 
     public void setId(Long id) {
         this.id = id;
+        System.out.println("hello");
     }
 }
