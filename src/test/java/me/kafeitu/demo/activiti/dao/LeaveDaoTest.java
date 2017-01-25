@@ -13,6 +13,7 @@ import me.kafeitu.modules.test.spring.SpringTransactionalTestCase;
 
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 
 /**
@@ -31,7 +32,7 @@ public class LeaveDaoTest extends SpringTransactionalTestCase {
 
 	@Test
 	//如果你需要真正插入数据库,将Rollback设为false
-	//@Rollback(false) 
+	@Rollback(false) 
 	public void crudEntity() {
 
 		// 保存请假
@@ -43,6 +44,9 @@ public class LeaveDaoTest extends SpringTransactionalTestCase {
 		leave.setUserId("kafeitu");
 		leave.setReason("no reason");
 		entityDao.save(leave);
+		System.out.println("__________________");
+		System.out.println(leave.getId());
+		System.out.println("__________________");
 		em.flush();
 
 		// 获取用户
