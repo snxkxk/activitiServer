@@ -11,6 +11,6 @@
 		activiti.cfg.xml和activiti-context.xml文件，所以当main/resources监测不到指定文件时就会导致该引擎被当做web应用的引擎对象，这样会导致有两个引擎
 		所以把引擎的名称改为非默认的“default”
 		-->
-		<property name="processEngineName" value="development" />
+		<property name="processEngineName" value="test" />
 	</bean>
 </beans>
