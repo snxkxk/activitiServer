@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>5.22.0</modelVersion>
+    <modelVersion>4.0.0</modelVersion>
     <groupId>org.phylloc.activiti</groupId>
     <artifactId>activitiServer</artifactId>
     <version>5.22-SNAPSHOT</version>
@@ -36,6 +36,7 @@
         <log4j.version>1.2.17</log4j.version>
         <jetty.version>8.1.15.v20140411</jetty.version>
         <h2.version>1.4.180</h2.version>
+        <mysql.version>5.1.38</mysql.version>
         <junit.version>4.10</junit.version>
         <mockito.version>1.9.0</mockito.version>
         <powermock.version>1.4.12</powermock.version>
@@ -523,7 +524,7 @@
             </plugin>
         </plugins>
 
-        <finalName>kft-activiti-demo</finalName>
+        <finalName>activitiServer</finalName>
     </build>
 
     <profiles>
@@ -567,7 +568,7 @@
                 <!-- driver -->
                 <jdbc.driver.groupId>mysql</jdbc.driver.groupId>
                 <jdbc.driver.artifactId>mysql-connector-java</jdbc.driver.artifactId>
-                <jdbc.driver.version>5.1.11</jdbc.driver.version>
+                <jdbc.driver.version>${mysql.version}</jdbc.driver.version>
 
                 <!-- driver configs -->
                 <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
