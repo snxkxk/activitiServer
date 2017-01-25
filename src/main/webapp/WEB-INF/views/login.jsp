@@ -40,6 +40,10 @@
 			}
 		});
 	});
+	function setUserName(obj){
+		$("#username").val($(obj).attr('id'));
+		$("#password").val("000000");
+	}
 	</script>
 </head>
 
@@ -62,11 +66,11 @@
 			<table>
 				<tr>
 					<td width="200" style="text-align: right;">用户名：</td>
-					<td><input id="username" name="username" class="login-input" placeholder="用户名（见下表）" /></td>
+					<td><input id="username" name="username" class="login-input" value="admin" placeholder="用户名（见下表）" /></td>
 				</tr>
 				<tr>
 					<td style="text-align: right;">密码：</td>
-					<td><input id="password" name="password" type="password" class="login-input" placeholder="默认为：000000" /></td>
+					<td><input id="password" name="password" value="000000" type="password" class="login-input" placeholder="默认为：000000" /></td>
 				</tr>
 				<tr>
 					<td colspan="2" style="text-align:center; " >
@@ -85,19 +89,19 @@
                         <th style="text-align: center">角色</th>
                     </tr>
                     <tr>
-                        <td>admin</td>
+                        <td><a href="javaScript:void(0);" id="admin" onclick="setUserName(this)">admin</a></td>
                         <td>管理员、用户</td>
                     </tr>
                     <tr>
-                        <td>kafeitu</td>
+                        <td><a href="javaScript:void(0);" id="kafeitu" onclick="setUserName(this)">kafeitu</a></td>
                         <td>用户</td>
                     </tr>
                     <tr>
-                        <td>hruser</td>
+                        <td><a href="javaScript:void(0);" id="hruser" onclick="setUserName(this)">hruser</a></td>
                         <td>人事、用户</td>
                     </tr>
                     <tr>
-                        <td>leaderuser</td>
+                        <td><a href="javaScript:void(0);" id="leaderuser" onclick="setUserName(this)">leaderuser</a></td>
                         <td>部门经理、用户</td>
                     </tr>
                 </table>
