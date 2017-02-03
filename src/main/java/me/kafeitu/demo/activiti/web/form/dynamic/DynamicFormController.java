@@ -175,7 +175,6 @@ public class DynamicFormController {
      * 办理任务，提交task的并保存form
      */
     @RequestMapping(value = "task/complete/{taskId}")
-    @SuppressWarnings("unchecked")
     public String completeTask(@PathVariable("taskId") String taskId, @RequestParam(value = "processType", required = false) String processType,
                                RedirectAttributes redirectAttributes, HttpServletRequest request) {
         Map<String, String> formProperties = new HashMap<String, String>();
@@ -215,7 +214,6 @@ public class DynamicFormController {
      * 提交启动流程
      */
     @RequestMapping(value = "start-process/{processDefinitionId}")
-    @SuppressWarnings("unchecked")
     public String submitStartFormAndStartProcessInstance(@PathVariable("processDefinitionId") String processDefinitionId,
                                                          @RequestParam(value = "processType", required = false) String processType,
                                                          RedirectAttributes redirectAttributes,
