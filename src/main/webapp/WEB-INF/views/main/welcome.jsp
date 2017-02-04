@@ -91,7 +91,7 @@
             <li>个人待办任务汇总</li>
             <li>分页查询</li>
             <li>流程定义缓存</li>
-            <li>集成Activiti Modeler[5.17+](<font color='red'>New</font>)</li>
+            <li>集成Activiti Modeler[5.22](<font color='red'>New</font>)</li>
             <li>引擎参数(<font color='red'>New</font>)</li>
             <li>引擎数据库查看(<font color='red'>New</font>)</li>
             <li>引擎内置用户与组(<font color='red'>New</font>)</li>
